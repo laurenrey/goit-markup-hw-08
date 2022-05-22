@@ -1,0 +1,92 @@
+.container-header {
+  @extend %align-list;
+}
+
+
+.header {
+  background-color: var(--color-light);
+  border-bottom: 1px solid #ececec;
+}
+
+// /* -----logo----- */
+
+.menu-list {
+  display: flex;
+}
+
+.menu-list__link {
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--primary-text-color);
+  list-style: none;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: color var(--transition-dur-tf);
+  &:hover,
+  &:focus {
+    color: var(--color-accent);
+  }
+}
+
+.menu-list__item {
+  min-width: 49px;
+}
+
+.menu-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu-list__link.current {
+  color: var(--color-accent);
+  &::after {
+    content: '';
+    position: absolute;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    margin-top: 28px;
+    background-color: var(--color-accent);
+  }
+}
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts__item {
+  min-width: 122px;
+}
+
+.contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts__link {
+  @extend %align-list;
+  text-decoration: none;
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color var(--transition-dur-tf);
+  &:hover,
+  &:focus {
+    color: var(--color-accent);
+  }
+}
+
+.contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
