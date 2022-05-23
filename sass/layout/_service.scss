@@ -1,5 +1,9 @@
 .service {
+  padding-bottom: 94px;
   background-color: var(--color-light);
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .service-list {
