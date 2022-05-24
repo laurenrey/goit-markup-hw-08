@@ -20,22 +20,31 @@
 <body>
     <!--header-->
     <header>
-        <section class="header">
-            <div class="container container-header">
+    <section class="header">
+        <div class="container container-header">
+    
+            <div class="header-logo-wrap">
                 <a href="/" class="logo header-logo">Web<span class="logo__item--dark">Studio</span></a>
+            </div>
+    
+    
+            <div class="header-nav-wrap">
                 <nav class="navigavion">
                     <ul class="menu-list list">
                         <li class="menu-list__item studio">
-                            <a href="/" class="menu-list__link">Студия</a>
+                            <a href="/" class="menu-list__link ">Студия</a>
                         </li>
-                        <li class="menu-list__item portfolio">
+                        <li class="menu-list__item portfolio ">
                             <a href="./portfolio.html" class="menu-list__link current">Портфолио</a>
                         </li>
-                        <li class="menu-list__item contacts">
+                        <li class="menu-list__item studio">
                             <a href="/" class="menu-list__link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
+            </div>
+    
+            <div class="header-contacts-wrap">
                 <ul class="contacts list">
                     <li class="contacts__item">
                         <a href="mailto:info@devstudio.com" class="contacts__link">
@@ -51,12 +60,21 @@
                     </li>
                 </ul>
             </div>
-        </section>
+            <div class="mob-menu-btn-wrap">
+                <button type="button" class="menu-open-btn">
+                    <svg class="menu-svg" width="40" height="40">
+                        <use href="./images/icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
+            </div>
+    
+        </div>
+    </section>
     </header>
 
     <!-- main -->
     <main>
-        <section class="filters section">
+        <section class="filters-section">
             <h1 class="visually-hidden">Наши работы</h1>
             <h2 class="visually-hidden">Фильтр</h2>
             <div class="container">
@@ -231,57 +249,60 @@
     <footer class="footer">
         <section class="section-footer">
             <div class="container-footer container">
-                <div class="address-wrap">
-                    <a href="/" class="logo">Web<span class="logo__item--light">Studio</span></a>
-                    <address class="address">
-                        <ul class="address-list list">
-                            <li class="address-list__item">
-                                <a href="https://goo.gl/maps/48jCdX3Z41KDSHPe8" target="_blank"
-                                    rel="noopener noreferrer" class="address-list__link">г. Киев, пр-т Леси Украинки,
-                                    26</a>
+                <div class="address-soc-wrap">
+                    <div class="address-wrap">
+                        <a href="/" class="logo-footer">Web<span class="logo__item--light">Studio</span></a>
+                        <address class="address">
+                            <ul class="address-list list">
+                                <li class="address-list__item">
+                                    <a href="https://goo.gl/maps/48jCdX3Z41KDSHPe8" target="_blank"
+                                        rel="noopener noreferrer" class="address-list__link">г. Киев, пр-т Леси Украинки,
+                                        26</a>
+                                </li>
+                                <li class="address-list__item">
+                                    <a href="mailto:info@example.com" class="address-list__contact">info@example.com</a>
+                                </li>
+                                <li class="address-list__item">
+                                    <a href="tel:+380991111111" class="address-list__contact">+38 099 111 11 11</a>
+                                </li>
+                            </ul>
+                        </address>
+                    </div>
+                    <div class="soc-networking-footer">
+                        <h3 class="soc-networking-footer__title title-footer">присоединяйтесь</h3>
+                        <ul class="soc-networking list">
+                            <li class="soc-networking__item">
+                                <a href="" class="soc-networking__link soc-networking__link--dark">
+                                    <svg class="soc-networking__icon soc-networking__icon--light" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
                             </li>
-                            <li class="address-list__item">
-                                <a href="mailto:info@example.com" class="address-list__contact">info@example.com</a>
+                            <li class="soc-networking__item">
+                                <a href="" class="soc-networking__link soc-networking__link--dark">
+                                    <svg class="soc-networking__icon soc-networking__icon--light" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
                             </li>
-                            <li class="address-list__item">
-                                <a href="tel:+380991111111" class="address-list__contact">+38 099 111 11 11</a>
+                            <li class="soc-networking__item">
+                                <a href="" class="soc-networking__link soc-networking__link--dark">
+                                    <svg class="soc-networking__icon soc-networking__icon--light" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="soc-networking__item">
+                                <a href="" class="soc-networking__link soc-networking__link--dark">
+                                    <svg class="soc-networking__icon soc-networking__icon--light" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
                             </li>
                         </ul>
-                    </address>
+                    </div>
                 </div>
-                <div class="soc-networking-footer">
-                    <h3 class="soc-networking-footer__title title-footer">присоединяйтесь</h3>
-                    <ul class="soc-networking list">
-                        <li class="soc-networking__item">
-                            <a href="" class="soc-networking__link soc-networking__link--dark">
-                                <svg class="soc-networking__icon soc-networking__icon--light" width="20" height="20">
-                                    <use href="./images/icons.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="soc-networking__item">
-                            <a href="" class="soc-networking__link soc-networking__link--dark">
-                                <svg class="soc-networking__icon soc-networking__icon--light" width="20" height="20">
-                                    <use href="./images/icons.svg#icon-twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="soc-networking__item">
-                            <a href="" class="soc-networking__link soc-networking__link--dark">
-                                <svg class="soc-networking__icon soc-networking__icon--light" width="20" height="20">
-                                    <use href="./images/icons.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="soc-networking__item">
-                            <a href="" class="soc-networking__link soc-networking__link--dark">
-                                <svg class="soc-networking__icon soc-networking__icon--light" width="20" height="20">
-                                    <use href="./images/icons.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+    
                 <div class="subscribtion">
                     <h3 class="subscribtion__title title-footer">Подпишитесь на рассылку</h3>
                     <form class="subscription__form">
