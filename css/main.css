@@ -977,6 +977,19 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .advantages-list__title {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 .advantages-list__description {
@@ -1528,6 +1541,12 @@ body {
   background-color: var(--color-light);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .filters-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .filter {
