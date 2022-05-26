@@ -2,12 +2,12 @@
   background-color: var(--color-light);
   padding-top: 60px;
   padding-bottom: 60px;
-
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 }
+
 .advantages-list {
   margin-bottom: -30px;
   @media screen and (min-width: 768px) {
@@ -23,7 +23,6 @@
     width: calc((100% - 60px) / 2);
     margin-left: 30px;
   }
-
   @media screen and (min-width: 1200px) {
     width: calc((100% - 120px) / 4);
   }

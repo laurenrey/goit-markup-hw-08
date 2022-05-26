@@ -19,9 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/main.min.css" />
-    <link rel="stylesheet" href="css/main.css" />
   </head>
-
   <body>
     <!-- header-->
     <header>
@@ -30,7 +28,6 @@
           <div class="header-logo-wrap">
             <a href="/" class="logo header-logo">Web<span class="logo__item--dark">Studio</span></a>
           </div>
-
           <div class="header-nav-wrap">
             <nav class="navigavion">
               <ul class="menu-list list">
@@ -46,7 +43,6 @@
               </ul>
             </nav>
           </div>
-
           <div class="header-contacts-wrap">
             <ul class="contacts list">
               <li class="contacts__item">
@@ -78,17 +74,13 @@
       <!--------- mobile menu --------->
 
       <div class="mobile-menu is-hidden">
-
         <button type="button" class="menu-close-btn">
           <svg class="close-icon" width="40" height="40">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-
         <div class="mob-menu-container container">
-
           <div class="mob-menu-top">
-
             <ul class="mob-menu-list list">
               <li class="mob-menu-list__item studio">
                 <a href="/" class="mob-menu-list__link">Студия</a>
@@ -101,29 +93,31 @@
               </li>
             </ul>
           </div>
-
-         
-
-            <div class="mob-menu-bottom">
-
-              <ul class="mob-contacts list">
-                <li class="mob-contacts__item">
-                  <a href="tel:+380961111111" class="mob-contacts__link tel"> +38 096 111 11 11</a>
-                </li>
-                <li class="mob-contacts__item">
-                  <a href="mailto:info@devstudio.com" class="mob-contacts__link mail"
-                    >info@devstudio.com</a
-                  >
-                </li>
-              </ul>
-            
-
-            
-              <a href="/" class="mob-soc-media">Instagram</a>
-              <a href="/" class="mob-soc-media">Twitter</a>
-              <a href="/" class="mob-soc-media">Facebook</a>
-              <a href="/" class="mob-soc-media">LinkedIn</a>
-           
+          <div class="mob-menu-bottom">
+            <ul class="mob-contacts list">
+              <li class="mob-contacts__item">
+                <a href="tel:+380961111111" class="mob-contacts__link tel"> +38 096 111 11 11</a>
+              </li>
+              <li class="mob-contacts__item">
+                <a href="mailto:info@devstudio.com" class="mob-contacts__link mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-soc-media-list list">
+              <li class="mob-soc-media-items">
+                <a href="/" class="mob-soc-media">Instsgram</a>
+              </li>
+              <li class="mob-soc-media-items">
+                <a href="/" class="mob-soc-media">Twitter</a>
+              </li>
+              <li class="mob-soc-media-items">
+                <a href="/" class="mob-soc-media">Facebook</a>
+              </li>
+              <li class="mob-soc-media-items">
+                <a href="/" class="mob-soc-media">LinkedIn</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -139,8 +133,6 @@
           </button>
         </div>
       </section>
-    
-
       <section class="advantages section">
         <h2 class="visually-hidden">About us</h2>
         <div class="container">
@@ -194,39 +186,48 @@
       </section>
 
       <!-- Чем мы занимаемся section-->
-
       <section class="service section">
         <div class="container">
           <h2 class="service__title title">Чем мы занимаемся</h2>
           <ul class="service-list list">
             <li class="service-list__item">
-              <a href=""
-                ><img src="./images/box1.jpg" alt="IT пишет код" width="370" height="294"
-              /></a>
+              <a href="">
+                <picture>
+                  <source
+                    srcset="./images/box1-1x.jpg 1x, /images/box1-2x.jpg 2x"
+                    media="(min-width:1200px)"
+                  />
+                  <img src="./images/box1-1x.jpg" alt="IT пишет код" />
+                </picture>
+              </a>
               <div class="service-list__container">
                 <h3 class="service-list__title">Десктопные приложения</h3>
               </div>
             </li>
             <li class="service-list__item">
-              <a href=""
-                ><img
-                  src="./images/box2.jpg"
-                  alt=" человек работает с телефоном и лептопом"
-                  width="370"
-                  height="294"
-              /></a>
+              <a href="">
+                <picture>
+                  <source
+                    srcset="./images/box2-1x.jpg 1x, /images/box2-2x.jpg 2x"
+                    media="(min-width:1200px)"
+                  />
+                  <img src="./images/box2-1x.jpg" alt="человек работает с телефоном и планшетом" />
+                </picture>
+              </a>
               <div class="service-list__container">
                 <h3 class="service-list__title">Мобильные приложения</h3>
               </div>
             </li>
             <li class="service-list__item">
-              <a href=""
-                ><img
-                  src="./images/box3.jpg"
-                  alt="человек работает с планшетом"
-                  width="370"
-                  height="294"
-              /></a>
+              <a href="">
+                <picture>
+                  <source
+                    srcset="./images/box3-1x.jpg 1x, /images/box3-2x.jpg 2x"
+                    media="(min-width:1200px)"
+                  />
+                  <img src="./images/box3-1x.jpg" alt="человек работает с планшетом" />
+                </picture>
+              </a>
               <div class="service-list__container">
                 <h3 class="service-list__title">Дизайнерские решения</h3>
               </div>
@@ -236,7 +237,6 @@
       </section>
 
       <!--our team section-->
-
       <section class="team section">
         <div class="container">
           <h2 class="team__title title">Наша команда</h2>
@@ -257,7 +257,6 @@
                 />
                 <img src="./images/img-1.jpg" alt="фото Ігоря" />
               </picture>
-
               <div class="member-list__container">
                 <h3 class="member-list__title">Игорь Демьяненко</h3>
                 <p class="member-list__description">Product Designer</p>
@@ -294,7 +293,21 @@
               </div>
             </li>
             <li class="member-list__item">
-              <img src="./images/img-2.jpg" alt="фото Ольги" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="./images/img-2-1x.jpg 1x, /images/img-2-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/img-2-tab-1x.jpg 1x, /images/img-2-tab-2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/img-2-mob.jpg 1x, /images/img-2-mob-2x.jpg 2x"
+                  media="(min-width:320px)"
+                />
+                <img src="./images/img-2-1x.jpg" alt="фото Ольги" />
+              </picture>
               <div class="member-list__container">
                 <h3 class="member-list__title">Ольга Репина</h3>
                 <p class="member-list__description">Frontend Developer</p>
@@ -331,7 +344,21 @@
               </div>
             </li>
             <li class="member-list__item">
-              <img src="./images/img-3.jpg" alt="фото Николая" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="./images/img-3-1x.jpg 1x, /images/img-3-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/img-3-tab-1x.jpg 1x, /images/img-3-tab-2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/img-3-mob.jpg 1x, /images/img-3-mob-2x.jpg 2x"
+                  media="(min-width:320px)"
+                />
+                <img src="./images/img-3-1x.jpg" alt="фото Николая" />
+              </picture>
               <div class="member-list__container">
                 <h3 class="member-list__title">Николай Тарасов</h3>
                 <p class="member-list__description">Marketing</p>
@@ -368,7 +395,21 @@
               </div>
             </li>
             <li class="member-list__item">
-              <img src="./images/img-4.jpg" alt="фото Михаила " width="270" height="260" />
+              <picture>
+                <source
+                  srcset="./images/img-4-1x.jpg 1x, /images/img-4-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/img-4-tab-1x.jpg 1x, /images/img-4-tab-2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/img-4-mob-1x.jpg 1x, /images/img-4-mob-2x.jpg 2x"
+                  media="(min-width:320px)"
+                />
+                <img src="./images/img-4-1x.jpg" alt="фото Михаила" />
+              </picture>
               <div class="member-list__container">
                 <h3 class="member-list__title">Михаил Ермаков</h3>
                 <p class="member-list__description">UI Designer</p>
@@ -461,7 +502,6 @@
     </main>
 
     <!--footer section-->
-
     <footer class="footer">
       <section class="section-footer">
         <div class="container-footer container">
@@ -540,7 +580,6 @@
               </ul>
             </div>
           </div>
-
           <div class="subscribtion">
             <h3 class="subscribtion__title title-footer">Подпишитесь на рассылку</h3>
             <form class="subscription__form">
@@ -634,6 +673,7 @@
               placeholder="Введите текст"
             ></textarea>
           </div>
+
           <div class="modal__checkbox">
             <input
               type="checkbox"
